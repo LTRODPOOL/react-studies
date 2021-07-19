@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import store from "../store";
 import Index from '../pages/App';
 import About from '../containers/about';
+import FromAPI from '../pages/FromAPI';
 
 function AppRouter() {
     return (
@@ -11,6 +12,7 @@ function AppRouter() {
             <Router>
                 <Route path="/" exact component={Index} />
                 <Route path="/sobre"exact component={About} />
+                <Route path="/from_api"exact component={FromAPI} />
             </Router>
         </Provider>
     );
